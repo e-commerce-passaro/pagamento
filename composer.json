@@ -1,0 +1,30 @@
+{
+  "name" : "e-commerce-passaro/pagamento",
+  "description" : "Biblioteca de pagamento para e-commerce.",
+  "version": "0.0.1",
+  "type":"library",
+  "homepage":"https://github.com/e-commerce-passaro/pagamento",
+  "time":"2017-04-26 15:06:01",
+  "license":"GPL-3.0+",
+  "authors":[{
+	"name":"Marcel Bezerra da Silva",
+	"email":"marcelbzrra@gmail.com",
+	"role":"developer"
+  }],
+  "support": {
+  	"email":"marcelbzrra@gmail.com",
+  	"issues":"https://github.com/e-commerce-passaro/acesso/issues",
+  	"wiki":"https://github.com/e-commerce-passaro/acesso/wiki",
+  	"source":"https://github.com/e-commerce-passaro/acesso/releases"
+  },
+  "require" : {
+    "php" : ">=7.0",
+    "e-commerce-passaro/autenticacao" : "1.0.2"
+  },
+  "keywords" : [ "e-commerce-passaro", "zf3", "ecommerce", "pagamento" ],
+  "autoload": {
+        "psr-4": {
+            "Ecompassaro\\Pagamento\\": "./src/Pagamento"
+        }
+  }  
+}
