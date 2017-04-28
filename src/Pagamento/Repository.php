@@ -8,7 +8,7 @@ use Zend\Db\Sql\Sql;
 use Zend\Db\Adapter\Driver\ResultInterface;
 use Zend\Db\Sql\Expression;
 
-class PagamentoRepository
+class Repository
 {
 
     private $tableGateway;
