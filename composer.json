@@ -1,10 +1,10 @@
 {
   "name" : "e-commerce-passaro/pagamento",
   "description" : "Biblioteca de pagamento para e-commerce.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type":"library",
   "homepage":"https://github.com/e-commerce-passaro/pagamento",
-  "time":"2017-04-28 09:58:02",
+  "time":"2017-04-28 11:19:03",
   "license":"GPL-3.0+",
   "authors":[{
 	"name":"Marcel Bezerra da Silva",

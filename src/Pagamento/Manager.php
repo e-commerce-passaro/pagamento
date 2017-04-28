@@ -8,7 +8,7 @@ class Manager
     private $repository;
     private $autenticacaoManager;
 
-    public function __construct(PagamentoRepository $repository, AutenticacaoManager $autenticacaoManager)
+    public function __construct(Repository $repository, AutenticacaoManager $autenticacaoManager)
     {
         $this->repository = $repository;
         $this->autenticacaoManager = $autenticacaoManager;
