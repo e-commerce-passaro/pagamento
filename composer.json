@@ -21,10 +21,14 @@
     "php" : ">=7.0",
     "e-commerce-passaro/autenticacao" : "1.0.2"
   },
+  "require-dev": {
+        "phpunit/phpunit": "5.5.*",
+        "phpunit/dbunit": ">=1.2"
+  },
   "keywords" : [ "e-commerce-passaro", "zf3", "ecommerce", "pagamento" ],
   "autoload": {
         "psr-4": {
             "Ecompassaro\\Pagamento\\": "./src/Pagamento"
         }
-  }  
+  }
 }

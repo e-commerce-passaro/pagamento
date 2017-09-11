@@ -15,7 +15,7 @@ class Pagamento
     private $valor;
 
     private $data;
-    
+
     /**
      *
      * @return int
@@ -27,7 +27,7 @@ class Pagamento
 
     /**
      *
-     * @param int $id            
+     * @param int $id
      * @return Pagamento
      */
     public function setId($id)
@@ -42,7 +42,10 @@ class Pagamento
      */
     public function getAutenticacaoId()
     {
-        return (int) $this->autenticacaoId;
+      if ($this->autenticacao instanceof Autenticacao) {
+        return (int) $this->autenticacao->getId();
+      }
+      return (int) $this->autenticacaoId;
     }
 
     /**
@@ -56,7 +59,7 @@ class Pagamento
 
     /**
      *
-     * @param int $autenticacaoId            
+     * @param int $autenticacaoId
      * @return Pagamento
      */
     public function setAutenticacaoId($autenticacaoId)
@@ -67,7 +70,7 @@ class Pagamento
 
     /**
      *
-     * @param Autenticacao $autenticacao            
+     * @param Autenticacao $autenticacao
      * @return Pagamento
      */
     public function setAutenticacao(Autenticacao $autenticacao)
@@ -87,7 +90,7 @@ class Pagamento
 
     /**
      *
-     * @param \DateTime|string $data se string deve vir no formato Y-m-d H:i:s        
+     * @param \DateTime|string $data se string deve vir no formato Y-m-d H:i:s
      * @return Pagamento
      */
     public function setData($data)
@@ -99,7 +102,7 @@ class Pagamento
         $this->data = $data;
         return $this;
     }
-    
+
     /**
      * @return double
      */
@@ -120,14 +123,14 @@ class Pagamento
 
     /**
      * Obtem a estrutura da entity Pagamento em formato array
-     * 
+     *
      * @return array
      */
     public function toArray()
     {
         return array(
-            'autenticacao_id' => $this->autenticacaoId,
-            'valor' => $this->valor
+            'autenticacao_id' => $this->getAutenticacaoId(),
+            'valor' => $this->getValor()
         );
     }
 
